@@ -1,0 +1,14 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="140" height="140" fill="#D73C26"/>
+<ellipse cx="30" cy="70" rx="10" ry="10" fill="black"/>
+<path d="M40 110C40 115.523 35.5228 120 30 120C24.4772 120 20 115.523 20 110C20 104.477 24.4772 100 30 100C35.5228 100 40 104.477 40 110Z" fill="black"/>
+<path d="M40 110C40 115.523 35.5228 120 30 120C24.4772 120 20 115.523 20 110C20 104.477 24.4772 100 30 100C35.5228 100 40 104.477 40 110Z" stroke="black"/>
+<circle cx="110" cy="110" r="9.99999" fill="black"/>
+<circle cx="110" cy="110" r="9.99999" stroke="black"/>
+<path d="M120 30C120 35.5228 115.523 40 110 40C104.477 40 100 35.5228 100 30C100 24.4772 104.477 20 110 20C115.523 20 120 24.4772 120 30Z" fill="black"/>
+<path d="M120 30C120 35.5228 115.523 40 110 40C104.477 40 100 35.5228 100 30C100 24.4772 104.477 20 110 20C115.523 20 120 24.4772 120 30Z" stroke="black"/>
+<circle cx="70" cy="70" r="10" fill="black"/>
+<circle cx="70" cy="70" r="10" stroke="black"/>
+<ellipse cx="110" cy="70" rx="9.99999" ry="10" fill="white"/>
+<ellipse cx="70" cy="110" rx="10" ry="9.99999" fill="white"/>
+</svg>
