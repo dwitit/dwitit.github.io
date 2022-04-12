@@ -4,15 +4,56 @@ import card2 from './images/card2.png';
 import card3 from './images/card3.png';
 import card4 from './images/card4.png';
 import card5 from './images/card5.png';
-
+import discord from './images/discord.svg';
+import Popup from './Popup';
 import './App.css';
+import React, { useEffect, useRef, useState } from 'react';
+import axios from 'axios';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const emailref =useRef(null);
+  //function submit(){ alert(emailref.current);}
+  useEffect(()=>{
+    
+  },[emailref]);
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
+  function handleclick() {
+    alert(emailref.current.value);
+    axios.post('https://vdh39hxot1.execute-api.ap-south-1.amazonaws.com/dev/putObject', {body:JSON.stringify({'email':emailref.current.value})})
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+    //return confirm('clicked');
+}
+
   return (
     <>
+      {isOpen && <Popup
+      content={<>
+              <div class='mb-4'>
+                <div class='flex justify-center items-center text-white text-2xl font-bold'>Get Notified</div>
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="abc@exammple.com">
+                  Email
+                </label>
+                <input ref={emailref} class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email"/>
+              </div>
+              <div class="flex items-center justify-between">
+                <button onClick={handleclick}id="submitemail" class="bg-white hover:bg-blue-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Submit
+                </button>
+              </div>             
+      </>}
+      handleClose={togglePopup}
+      />}
       <div class='bg-black space-y-1'>
         <nav class='static flex flex-row-reverse justify-between pt-2 pb-2 pr-2 pl-2'>
-          <button class='bg-white text-black font-bold py-2 px-4 rounded'> Join WatchList</button>
+          <button onClick={togglePopup}  class=' text-white font-bold py-2 px-4 rounded'> Join WatchList</button>
           <div class='flex space-x-4'>
             <img alt='logo' class='w-10 h-10' src={logo} />
             <div class='text-3xl text-white'>dwit</div>
