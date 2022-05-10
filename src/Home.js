@@ -13,7 +13,7 @@ function Home() {
                 How can we have faster NFT liquidity ?
             </div>
             <div class='flex flex-wrap lg:flex-row flex-col space-y-4 p-4 items-center lg:justify-between'>
-                <div class='flex flex-col bg-[#334EBE] w-60 p-4 rounded-md justify-center'>
+                <div class='flex flex-col bg-[#334EBE] w-60 p-4 rounded-md'>
                     <div class='flex justify-center items-center lg:text-xl text-sm text-white font-bold pb-2 text-center'>
                         NFT Past Experience Quantified
                     </div>
@@ -73,7 +73,7 @@ function Home() {
                 </div>
             </div>
             <div class='flex flex-col pb-8 space-y-4' >
-                <div class='bg-[#334EBE] p-4 rounded-md flex-wrap w-screen'>
+                <div class='bg-[#334EBE] p-4 rounded-md h-28 w-screen'>
                     <div class='items-center lg:text-2xl text-xl text-white flex-wrap font-bold pb-2 text-center stroke-white' >
                         Fairground to all deals
                     </div>
@@ -81,7 +81,7 @@ function Home() {
                         All deals are given fair ground and their performance reflects their reach
                     </div>
                 </div>
-                <div class='bg-[#D81A4F] p-4 rounded-md w-screen'>
+                <div class='bg-[#D81A4F] p-4 rounded-md h-28 w-screen'>
                     <div class='pl-30 items-center lg:text-2xl text-xl text-white font-bold pb-2 text-center stroke-white'>
                         Faster liquidity
                     </div>
@@ -89,7 +89,7 @@ function Home() {
                         Good deals get large reach in short time
                     </div>
                 </div>
-                <div class=' bg-[#26CCD7] p-4 rounded-md w-screen'>
+                <div class=' bg-[#26CCD7] p-4 rounded-md h-28 w-screen'>
                     <div class='pl-30 items-center lg:text-2xl text-xl text-white font-bold pb-2 text-center stroke-white'>
                         Dwit score reflects success
                     </div>
@@ -97,7 +97,7 @@ function Home() {
                         A number is enough to communicate your understanding
                     </div>
                 </div>
-                <div class='bg-[#704BBF] p-4 rounded-md w-screen' >
+                <div class='bg-[#704BBF] p-4 rounded-md  h-28 w-screen' >
                     <div class='pl-30 items-center lg:text-2xl text-xl text-white font-bold pb-2 text-center stroke-white'>
                         Positive & neutral impressions differ
                     </div>

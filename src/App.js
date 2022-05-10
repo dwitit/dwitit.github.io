@@ -59,7 +59,7 @@ function App() {
           <div class='bg-black space-y-1'>
           <nav class='static flex flex-row-reverse justify-between pt-2 pb-2 pr-2 pl-2'>
             <div class='flex space-x-4'>
-              <NavLink exact to="/Mynft" className='bg-white text-black font-bold py-2 px-4 rounded'>My Nft</NavLink>
+              {/* <NavLink exact to="/Mynft" className='bg-white text-black font-bold py-2 px-4 rounded'>My Nft</NavLink> */}
               <button onClick={togglePopup} class='bg-white text-black font-bold py-2 px-4 rounded'> Join WaitList</button>
               <button onClick={connect} title='Connect to Metamask' class='bg-blue-800 text-white font-bold py-2 px-4 rounded'> <img src={metamasklogo} alt="Metamask" width="25" height="25" /></button>
               <div class='text-white'> {isActive ? `Account is:` + account : ``}</div>
